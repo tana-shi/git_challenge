@@ -1,0 +1,52 @@
+shingotana@shingonoAir git_challenge % git remote add origin git@github.com:tana-shi/git_challenge.git
+shingotana@shingonoAir git_challenge % git remote -v
+origin	git@github.com:tana-shi/git_challenge.git (fetch)
+origin	git@github.com:tana-shi/git_challenge.git (push)
+shingotana@shingonoAir git_challenge % # インデックスとローカルリポジトリの変更 差分を確認する
+git diff --staged
+zsh: command not found: #
+shingotana@shingonoAir git_challenge % git diff --staged
+shingotana@shingonoAir git_challenge % git push -u origin git@github.com:tana-shi/git_challenge.git
+error: src refspec git@github.com does not match any
+error: failed to push some refs to 'github.com:tana-shi/git_challenge.git'
+shingotana@shingonoAir git_challenge % git push -u origin pull_challenge
+error: src refspec pull_challenge does not match any
+error: failed to push some refs to 'github.com:tana-shi/git_challenge.git'
+shingotana@shingonoAir git_challenge % git log
+commit d4f47ed57c03d0efa13434aa0f356222fdfd8970 (HEAD -> pull_request)
+Author: samurai-terakoya <”shingo_tana626@icloud.com”>
+Date:   Wed Jan 15 18:32:55 2025 +0900
+
+    Hello,world!
+    こんにちは、世界！
+
+commit 37d542137f3848deb74d00f5bf77a167b7435d7e
+Author: samurai-terakoya <”shingo_tana626@icloud.com”>
+Date:   Wed Jan 15 02:40:46 2025 +0900
+
+    Hello, world!
+    こんばんは、世界！
+
+commit bc2b6c2f5c88e358c4a255da9ba8cd81e7d2bdbf (master, main)
+Author: samurai-terakoya <”shingo_tana626@icloud.com”>
+Date:   Wed Jan 15 01:54:08 2025 +0900
+
+    Hello, world!
+    こんにちは、世界！
+shingotana@shingonoAir git_challenge % git push -u origin pull_request
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+shingotana@shingonoAir git_challenge % 
+shingotana@shingonoAir git_challenge % git push
+fatal: The current branch pull_request has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin pull_request
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
